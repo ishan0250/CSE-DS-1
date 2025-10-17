@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+  <center>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="/submit-login" method="POST">
+        <label for="username">Username</label> <br>
+        <input type="text" id="username" name="username" required /><br>
+
+        <label for="password">Email</label> <br>
+
+        <input type="password" id="password" name="password" required /><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea><br>
+
+        <button type="submit">Submit</button> <br>
+        <h2>SELECT YOUR MOBILE</h2>
+        <select name="mobiles" id="mobiles">
+          <option value="SELECT">SELECT</option>
+          <option value="samsung">samsung</option>
+          <option value="motorola">motorola</option>
+          <option value="realme">realme</option>
+          <input type="radio" id="radio" value="html">
+          <h2>CHECKBOX</h2>
+          <label>Select your mobile brand(s):</label><br>
+
+          <input type="checkbox" id="realme" name="mobile[]" value="Realme" />
+          <label for="realme">Realme</label><br>
+
+          <input type="checkbox" id="motorola" name="mobile[]" value="Motorola" />
+          <label for="motorola">Motorola</label><br>
+
+          <input type="checkbox" id="samsung" name="mobile[]" value="Samsung" />
+          <label for="samsung">Samsung</label><br>
+
+          
+      </form>
+  </div>
+  </center>
+</body>
+</html>
