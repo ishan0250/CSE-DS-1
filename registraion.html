@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    <center>
+    <h2>Student Registration Form</h2>
+  <form action="/submit" method="post">
+    <label for="name">Name of student:</label>
+    <input type="text" id="name" name="name" required> <br></br>
+
+    <label for="dob">DATE OF  BIRTH</label>
+    <input type="date" id="dob" name="dob" required> <br></br>
+
+
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year" required>
+      <option value="">Select Year</option>
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+    </select> <br><br>
+
+    <label for="admission">Admission Number:</label>
+    <input type="text" id="admission" name="admission" required> <br></br>
+
+    <label for="aadhar">Aadhar Number:</label>
+    <input type="text" id="aadhar" name="aadhar" maxlength="12" > <br></br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="6" column="60" required></textarea><br></br>
+
+    <label for="photo">Upload Photo:</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*" ><br></br>
+
+    <label for="document">Upload Supporting Document:</label><br>
+    <input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.jpg,.png"><br></br>
+
+
+
+
+
+    <label for="branch">Branch:</label>
+    <input type="text" id="branch" name="branch" required> <br></br>
+
+
+    <label for="section">Section:</label>
+    <input type="text" id="section" name="section" required> <br></br>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" required> <br></br>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="exmaple@abc.com" > <br></br>
+    <button type="submit">SUBMIT</button> <br></br>
+
+  </form>
+</body>
+</html>
