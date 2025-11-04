@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+</head>
+<body>
+<div align="center">
+  <h2>Student Registration Form</h2>
+  <form action="/submit" method="post" enctype="multipart/form-data">
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="6" cols="60" required></textarea><br><br>
+
+    <label for="year">Year of Study:</label><br>
+    <select id="year" name="year" required>
+      <option value="">Select Year</option>
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+    </select><br><br>
+
+    <label for="admission">Admission Number:</label><br>
+    <input type="text" id="admission" name="admission" required><br><br>
+
+    <label for="aadhar">Aadhar Number:</label><br>
+    <input type="text" id="aadhar" name="aadhar" maxlength="12" required><br><br>
+
+    <label for="branch">Branch:</label><br>
+    <input type="text" id="branch" name="branch" required><br><br>
+
+    <label for="section">Section:</label><br>
+    <input type="text" id="section" name="section" required><br><br>
+
+    <label for="course">Course:</label><br>
+    <input type="text" id="course" name="course" required><br><br>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+
+  <!-- Existing fields above... -->
+
+  <label for="gender">Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="Male" required>
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="Other">
+  <label for="other">Other</label><br><br>
+
+  <label for="admission_mode">Mode of Admission:</label><br>
+  <input type="radio" id="regular" name="admission_mode" value="Regular" required>
+  <label for="regular">Regular</label><br>
+  <input type="radio" id="management" name="admission_mode" value="Management Quota">
+  <label for="management">Management Quota</label><br><br>
+
+  <label for="hostel">Hostel Resident:</label><br>
+  <input type="radio" id="hostel_yes" name="hostel" value="Yes" required>
+  <label for="hostel_yes">Yes</label><br>
+  <input type="radio" id="hostel_no" name="hostel" value="No">
+  <label for="hostel_no">No</label><br><br>
+    <label for="photo">Upload Photo:</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+    <label for="document">Upload Supporting Document:</label><br>
+    <input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.jpg,.png" required><br><br>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+    <input type="submit" value="Register">
+
+  </form>
+</div>
+</body>
+</html> 
+
+
+
+    
+
+  
+
+  
+  
+
+
+
+    
